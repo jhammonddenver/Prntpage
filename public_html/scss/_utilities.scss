@@ -1,0 +1,158 @@
+// Utilities
+
+// Page Top Background
+@mixin pt-background($bgName, $bgFile) {
+	background: transparent url('../images/#{$bgName}.#{$bgFile}') center no-repeat;
+	-webkit-background-size: cover;
+	        background-size: cover;
+}
+
+// Generic Placeholder
+@mixin placeholder($color){
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+	&:-moz-placeholder {
+		 color: $color;  
+	}
+	&::-moz-placeholder { 
+		color: $color;  
+	}
+	&:-ms-input-placeholder {  
+		color: $color;  
+	} 
+}
+
+// Linear Gradient
+@mixin linear-gradient-b($deg, $startColor, $endColor) {
+	background: $startColor;
+	background: -moz-linear-gradient($deg, $startColor 0%, $endColor 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, $startColor), color-stop(100%, $endColor));
+	background: -webkit-linear-gradient($deg, $startColor 0%, $endColor 100%);
+	background: -o-linear-gradient($deg, $startColor 0%, $endColor 100%);
+	background: -ms-linear-gradient($deg, $startColor 0%, $endColor 100%);
+	background: linear-gradient($deg, $startColor 0%, $endColor 100%);
+}
+
+// Animation
+@mixin keyframes($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+     -moz-animation: #{$str};
+          animation: #{$str};
+}
+
+@mixin animation-delay($delay) {
+  -webkit-animation-delay: #{$delay};
+     -moz-animation-delay: #{$delay};
+          animation-delay: #{$delay};
+}
+
+// generic transition
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	   -moz-transition: $args;
+	    -ms-transition: $args;
+	     -o-transition: $args;
+	        transition: $args;
+}
+
+// generic transform
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+            transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+ 
+// scale
+@mixin scale($scale) {
+	 @include transform(scale($scale));
+} 
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+        moz-transform-origin: $origin;
+	     -o-transform-origin: $origin;
+	    -ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+            transform-origin: $origin;
+}
+
+
+// Fot Face
+@mixin fontFace($font-title, $font-weight, $font-style) {
+	@font-face {
+		font-family: $font-title;
+		src: url('../fonts/#{$font-title}/#{$font-title}.eot');
+		src: local('☺'), 
+			 url('../fonts/#{$font-title}/#{$font-title}.woff') format('woff'), 
+		     url('../fonts/#{$font-title}/#{$font-title}.ttf') format('truetype'), 
+		     url('../fonts/#{$font-title}/#{$font-title}.svg') format('svg');
+		font-weight: $font-weight;
+		font-style: $font-style;
+	}
+}
+
+@include fontFace('GeometriaBold', normal, normal);
+@include fontFace('GeometriaReg', normal, normal);
+@include fontFace('GeometriaMedium', normal, normal);
+@include fontFace('GeometriaHeavy', normal, normal);
+
+// Border class
+.border-tyle {
+	padding: 10px;
+	border: 1px solid #ededed;
+	border-radius: 5px;
+
+	@include media-breakpoint-up(sm){
+		padding: 30px;
+	}
+}
+
+// Variables
+$font-stack: 'Roboto', sans-serif;
+$font-title-top: 'Roboto Slab', sans-serif;
+$font-title-bold: 'GeometriaBold', 'Roboto', sans-serif;
+$font-title-regular: 'GeometriaReg', 'Roboto', sans-serif;
+$font-title-medium: 'GeometriaMedium', 'Roboto', sans-serif;
+$font-title-heavy: 'GeometriaHeavy', 'Roboto', sans-serif;
+
+$base-font-size: 1rem;
+$base-line-height: 1.5rem;
+
+$base-color: #303841;
+
+$valid-color: #2ecc71;
+$invalid-color: #e23e57;
+
+body {
+	font-family: $font-stack;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 400;
+    color: $base-color;
+}

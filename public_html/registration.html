@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prntpage | Admin </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    
+    <meta name="description" content="">   
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <div class="project">   
+        <!-- Page Header : start -->
+        <header class="page-header">            
+            <div class="navbar navbar-expand-lg align-items-center">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="Printpage">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"/></svg>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarTop">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Properties</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle caret" href="#"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="search">
+                            <form class="form search-form">
+                                <label for="page-search" class="search-label">
+                                    <input class="form-control search-control" type="search" placeholder="Search" aria-label="Search" id="page-search">                                    
+                                </label>  
+                                <button class="search-btn" type="submit"></button>
+                            </form>
+                        </div>   
+
+                        <div class="page-header__settings text-lg-right">
+                            <div class="auth-user">
+                                <div class="auth-user__entrance">
+                                    <ul class=" nav">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/users/login">Log In</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/users/signup">Sign Up</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                               <!--  <div class="auth-user__list">
+                                    <div class="auth-user__item page-notif">
+                                        <a href="#" class="page-header__trigger dropdown-toggle" id="dropdownMenu-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="ico-notif"></i>
+                                        </a>
+
+                                        <div class="dropdown-menu auth-user__dropdown" aria-labelledby="dropdownMenu-0">
+                                            <ul class="page-header__list">
+                                                <li class="page-header__item">
+                                                    <a href="#" class="page-header__link">
+                                                        Lorem ipsum.
+                                                    </a>
+                                                </li>
+                                                <li class="page-header__item">
+                                                    <a href="#" class="page-header__link">
+                                                        Lorem ipsum dolor.
+                                                    </a>
+                                                </li>
+                                                <li class="page-header__item">
+                                                    <a href="#" class="page-header__link">
+                                                        Lorem.
+                                                    </a>
+                                                </li>
+                                                <li class="page-header__item">
+                                                    <a href="#" class="page-header__link">
+                                                        Logout
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="auth-user__item page-note">
+                                        <a href="#" class="page-header__trigger dropdown-toggle" id="dropdownMenu-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="ico-note"></i>
+                                        </a>
+
+                                        <div class="dropdown-menu auth-user__dropdown" aria-labelledby="dropdownMenu-1">                                    
+                                            <ul class="page-header__list">
+                                                <li class="page-header__item">
+                                                    <a href="#" class="page-header__link">
+                                                        Lorem ipsum.
+                                                    </a>
+                                                </li>
+                                                <li class="page-header__item">
+                                                    <a href="#" class="page-header__link">
+                                                        Lorem ipsum dolor.
+                                                    </a>
+                                                </li>
+                                                <li class="page-header__item">
+                                                    <a href="#" class="page-header__link">
+                                                        Lorem.
+                                                    </a>
+                                                </li>
+                                                <li class="page-header__item">
+                                                    <a href="#" class="page-header__link">
+                                                        Logout
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="auth-user__item user-header">
+                                        <a href="#" class="page-header__trigger dropdown-toggle caret" id="dropdownMenu-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="ico-user">
+                                                <img src="images/user-xs.png" alt="">
+                                            </span>
+                                        </a>
+
+                                        <div class="dropdown-menu auth-user__dropdown" aria-labelledby="dropdownMenu-2">
+                                            <div class="user-header__info">
+                                                <div class="row align-items-center">
+                                                    <div class="col-3 col-md-3">
+                                                        <span class="ico-user">
+                                                            <img src="images/user-xs.png" alt="">
+                                                        </span>
+                                                    </div>
+                                                    
+                                                    <div class="col-9 col-md-9">
+                                                        <div class="user-header__name">
+                                                            Taras Petriichuk
+                                                        </div>
+                                                        <span class="user-header__email">
+                                                            petriichuk@gmail.com
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="user-header__list">
+                                                <ul class="page-header__list">
+                                                    <li class="page-header__item">
+                                                        <a href="#" class="page-header__link">
+                                                            Create a team
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-header__item">
+                                                        <a href="#" class="page-header__link">
+                                                            Setting
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-header__item">
+                                                        <a href="#" class="page-header__link">
+                                                            Notifications
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-header__item">
+                                                        <a href="#" class="page-header__link">
+                                                            Logout
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+        </header> <!-- Page Header : end -->
+
+        <!-- Page Navigation : start -->
+        <nav class="page-nav navbar navbar-expand-lg align-items-center">
+            <div class="container">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-center col-12">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Add Listing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Listings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Watched Listings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Watched Listings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Purchases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Messages</a>
+                        </li>
+                        <li class="nav-item  active">
+                            <a class="nav-link" href="#">My Details</a>
+                        </li>
+                    </ul>                   
+                </div>
+            </div>
+        </nav> <!-- Page Navigation : end -->
+        
+        <!-- Main content  : start -->
+        <main class="page-content"> 
+            <div class="authorization d-flex flex-column justify-content-center">
+                <div class="container">
+                    <div class="registration row justify-content-center">
+                        <div class="col-12">
+                            <div class="authorization-inner mx-auto">
+                                <div class="authorization-menu">                        
+                                    <ul class="nav  ">
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="login.html">Sign In</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="registration.html">Register</a>
+                                        </li>
+                                    </ul>                        
+                                </div>
+
+                                <div class="authorization-body">
+                                    <form class="form authorization-form">
+                                        <div class="authorization-form__top">
+                                            <div class="form-group">
+                                                
+                                                <input type="email" class="form-control is-valid" id="registrationEmail" required>
+
+                                                <label for="registrationEmail" class="form-label">Email</label>
+
+                                                <span class="form-bar"></span>
+
+                                                <div class="invalid-feedback"> 
+                                                    Enter your email
+                                                </div> 
+                                            </div>
+
+                                            <div class="form-group">              
+
+                                                <input type="password" class="form-control is-invalid" id="registrationPass" required>
+
+                                                <label for="registrationPass" class="form-label">Create password</label>
+
+                                                <span class="form-bar"></span>
+
+                                                <div class="invalid-feedback"> 
+                                                    <span class="invalid-feedback__label">Your password needs to:</span>
+
+                                                    <ul class="invalid-feedback__list">
+                                                        <li class="invalid-feedback__item">
+                                                            not include your name, email address or common passwords
+                                                        </li>
+                                                        <li class="invalid-feedback__item success">
+                                                            include at least one number or <a href="#">symbol</a>
+                                                        </li>
+                                                        <li class="invalid-feedback__item">
+                                                            include both lower and upper case <a href="#">latin characters</a>.
+                                                        </li>
+                                                        <li class="invalid-feedback__item">
+                                                            be at least 8 characters long.
+                                                        </li>
+                                                    </ul>
+                                                </div> 
+                                            </div>
+
+                                            <div class="form-group">
+                                                <script src='https://www.google.com/recaptcha/api.js'></script>
+                                                <div class="captch mx-auto">
+                                                    <div class="g-recaptcha mx-auto" data-sitekey="6LfZYTcUAAAAAA3mj5DN8osa1lPY-B7e6KLVgrQY"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row justify-content-between align-items-center form-group">
+                                                <div class="col-12">                  
+                                                    <div class="checkbox">
+                                                        <label class="checkbox-label">
+                                                            <input type="checkbox" class="checkbox-input">
+                                                            <span class="checkbox-indicator"></span>
+                                                            <span class="checkbox-description">
+                                                                I agree to GearBest's <a href="#" class="form-link">Terms and Conditions</a> and <a href="#" class="form-link">Privacy Policies</a>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row justify-content-md-end">
+                                                <div class="col-12 col-md-6 text-md-right">
+                                                    <button type="submit" class="btn btn-send" disabled>Sign Up</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="authorization-form__bottom">
+                                            <div class="social d-flex align-items-center justify-content-center">
+                                                <span>
+                                                    Or connect via 
+                                                </span>
+
+                                                <ul class="social-list list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="social-link social-link_gplus">
+                                                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="social-link social-link_facebook">
+                                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>                   
+                </div>
+            </div>  
+
+        </main> <!-- Main content  : end -->
+
+        <!-- Page Footer : start -->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyright text-center">
+                            2017 © Prntpage. All rights reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- Page Footer : end -->
+    </div>
+
+    <!--[if lt IE 9]>
+        <script src="libs/html5shiv/es5-shim.min.js"></script>
+        <script src="libs/html5shiv/html5shiv.min.js"></script>
+        <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+        <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- build:css js/vendor.js --> 
+        <script src="libs/jquery/jquery-2.1.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <!-- endbuild -->   
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+// ==== Layout Style ====
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {	
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 80px;
+	}
+
+	.page-footer {
+		@include media-breakpoint-up(lg) {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+	}
+}
+
+.container {
+	@include media-breakpoint-up(xl) {
+		max-width: 1200px;
+	}
+}
+
+.page-content {
+	margin-bottom: 18px;
+	position: relative;
+}
+
+// == Page Header
+.page-header {
+    background: #2ecc71;
+    padding: 3px 15px 3px;  
+    min-height: 50px;
+
+    .navbar {
+    	min-height: 44px;
+    }  
+
+	&__trigger {
+	    display: block;
+	    position: relative;	    
+	}
+
+	//DropDown List
+	&__list {
+	    list-style-type: none;
+	    padding: 0;
+	    margin: 0;
+	}
+
+	&__item {
+	    margin-bottom: 4px;
+	}
+
+	&__link,
+	.dropdown-item {
+	    font-size: .9375rem;
+	    color: #000;
+
+	    &:hover {
+		    color: #415b90;
+		    text-decoration: none;
+		    background: transparent;
+		}
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+// == Page Main Navigation
+.page-nav {
+	background: #393e46;
+}
+
+// == Page Footer
+.page-footer {
+    padding: 28px 0;
+
+    &_dark {
+    	background: #1f1b2b;
+    	color: rgba(#fff, .3);
+    	padding: 11px 0 10px;
+    }
+}
+
+// == Admin Page
+.page {
+	&__title {
+	    font-size: 1.8975rem;
+	    line-height: 2.125rem;
+	    font-family: $font-title-bold;
+	    margin: 24px 0 10px;
+
+	    span {
+	    	color: rgba($base-color, .2);
+	    }
+	}
+
+	&__subtitle {
+	    font-size: 1.125rem;
+	    line-height: 1.25rem;
+	    font-family: $font-title-bold;
+	    margin: 1.125rem 0;
+	}
+}
+

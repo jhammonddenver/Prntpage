@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <title>prntpage</title>
+        
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/tempcss.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if IE]>
+            <p class="browserupgrade">
+                You are using an <strong>outdated</strong> browser. 
+                Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+            </p>
+        <![endif]--> 
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none!important">
+            <path id="dropdown" fill-rule="evenodd" d="M9.717,-0.000 L5.500,4.351 L1.283,-0.000 L-0.000,1.324 L5.500,6.999 L11.000,1.324 L9.717,-0.000 Z"/>
+            <path id="dialog" fill-rule="evenodd" fill="rgb(248, 248, 248)" d="M22.000,21.000 L22.016,25.086 C22.016,25.456 21.794,25.789 21.453,25.930 C21.341,25.977 21.222,26.000 21.105,26.000 C20.867,26.000 20.634,25.907 20.460,25.732 L15.000,21.000 L4.000,21.000 C1.486,21.000 -0.000,18.519 -0.000,16.000 L-0.000,4.568 C-0.000,2.049 2.045,-0.000 4.558,-0.000 L21.442,-0.000 C23.955,-0.000 26.000,2.049 26.000,4.568 L26.000,16.005 C26.000,18.329 24.243,20.716 22.000,21.000 ZM24.000,5.000 C24.000,3.488 22.508,2.000 21.000,2.000 L5.000,2.000 C3.492,2.000 2.000,3.488 2.000,5.000 L2.000,16.000 C2.000,17.511 3.492,19.000 5.000,19.000 L15.000,19.000 C15.242,19.000 16.163,18.842 16.334,19.013 L20.000,23.000 L20.000,19.000 L21.000,19.000 C22.508,19.000 24.000,17.511 24.000,16.000 L24.000,5.000 ZM6.000,14.000 L6.000,13.000 L6.000,12.000 L20.000,12.000 L20.000,14.000 C20.000,14.000 18.503,14.000 18.000,14.000 L6.000,14.000 ZM6.000,8.000 L6.000,7.000 L20.000,7.000 L20.000,8.000 L20.000,9.000 L6.000,9.000 L6.000,8.000 Z"/>
+            <path id="checkmark" fill-rule="evenodd" d="M5 16.577l2.194-2.195 5.486 5.484L24.804 7.743 27 9.937l-14.32 14.32 Z" />
+        </svg>
+
+        <header>
+            <div class="top-menu">
+                <div class="container">
+                    <div class="d-flex jc-sb ai-c">
+                        <!-- nav: logo-side of menu -->
+                        <div class="right-nav d-flex ai-c">
+                            <a href="#" class="logo animated-fadeInLeft">Prntpage</a>
+                            <a href="#" class="top-menu-link animated-fadeInDown">Properties</a>
+                            <a href="#" class="top-menu-dropdown animated-fadeInDown">Dropdown 
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+                                    <use xlink:href="#dropdown" class="dropdown-ico" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- nav: dialog icon -->
+                        <div class="left-nav d-flex ai-c animated-fadeInRight">
+                            <a class="dialog-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="26px">
+                                    <use xlink:href="#dialog" />
+                                </svg>
+                            </a>
+
+                            <!-- nav: profile area -->
+                            <div class="top-menu-profile small-profile d-flex ai-c">
+                                <span class="small-profile-avatar">
+                                    <img src="images/avatar-sm.png" alt="avatar" />
+                                </span>
+                                
+                                <!-- nav: profile dropdown -->
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+                                    <use xlink:href="#dropdown" class="dropdown-ico" />
+                                </svg>
+                                <div class="small-profile-dropdown close-outside">
+                                    <div class="d-flex small-profile-dropdown-info">
+                                        <div class="small-profile-dropdown-img">
+                                            <img src="images/avatar-sm.png" alt="avatar" />
+                                        </div>
+                                        
+                                        <div class="small-profile-dropdown-text">
+                                            <p class="name">Taras Petriichuk</p>
+                                            <span class="mail">petriichuk@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <ul class="small-profile-dropdown-links">
+                                        <li><a href="#">Create a team</a></li>
+                                        <li><a href="#">Settings</a></li>
+                                        <li><a href="#">Notifications</a></li>
+                                        <li><a href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
+
+                    </div> 
+                </div> 
+            </div> <!-- end of top-menu -->
+
+            <ul class="header-nav d-flex jc-c">
+                <li class="animated-fadeInDown"><a href="#">Add Listing</a></li>
+                <li class="animated-fadeInDown"><a href="#">My Listings</a></li>
+                <li class="animated-fadeInDown"><a href="#">My Watched Listings</a></li>
+                <li class="animated-fadeInDown"><a href="#">My Watched Listings</a></li>
+                <li class="animated-fadeInDown"><a href="#">My Store</a></li>
+                <li class="animated-fadeInDown"><a href="#">My Purchases</a></li>
+                <li class="animated-fadeInDown"><a href="#">My Messages</a></li>
+                <li class="active animated-fadeInDown"><a href="#">My Details</a></li>
+            </ul>
+        </header>
+
+
+
+        <section class="page-tab">
+            <div class="container">
+                <h2 class="page-tab-header animated-fadeIn">Complete Check Out</h2>
+            </div>
+        </section>
+
+        <section class="page-content page-content-message">
+            <div class="container">
+                <div class="d-flex">
+                    <!-- stepper progress sidebar -->
+                    <aside class="page-content-nav steps animated-fadeInLeft">
+                        
+                        <ul class="nav nav-tabs" id="myTabSteps" role="tablist">
+                            <li class="nav-item">
+                                <a id="step-1-tab" class="nav-link d-flex active save" data-toggle="tab" href="#step-1" role="tab" aria-controls="step-1" aria-selected="true">
+                                    <span class="steps-num">01</span>
+                                    <span class="steps-name">Purchase Details</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a id="step-2-tab" class="nav-link d-flex" data-toggle="tab" href="#step-2" aria-controls="step-2" aria-selected="false">
+                                    <span class="steps-num">02</span>
+                                    <span class="steps-name">Confirm Your Details</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a id="step-3-tab" class="nav-link d-flex" data-toggle="tab" href="#step-3" aria-controls="step-3" aria-selected="false">
+                                    <span class="steps-num">03</span>
+                                    <span class="steps-name">Payment Method</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a id="step-4-tab" class="nav-link d-flex" data-toggle="tab" href="#step-4" aria-controls="step-4" aria-selected="false">
+                                    <span class="steps-num ico">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="24px">
+                                            <use xlink:href="#checkmark" />
+                                        </svg>
+                                    </span>
+                                    <span class="steps-name">Pay</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </aside>
+
+                    <div class="page-content-view animated-fadeIn">
+                        <div class="tab-content" id="myTabContentSteps">
+
+                            <div id="step-1" class="tab-pane animated-fadeIn active" role="tabpanel" aria-labelledby="step-1-tab">
+                                <div class="product-prev">
+                                    <img src="https://prntpage.com/images/catalog/house-1.png" />
+                                </div>
+
+                                <div class="product-body">
+                                    <h4>Trullo aromatic green</h4>
+
+                                    <div class="product-price">
+                                        $290,000
+                                    </div>
+
+                                    <div class="product-address">
+                                        942 E Mississippi Ave, Denver, CO 80210
+                                    </div> 
+
+                                    <div class="product-type">
+                                        <ul>
+                                            <li>East Denver East Colfax</li>
+                                            <li>Single Family Home</li>
+                                        </ul>
+                                    </div>
+                                </div><!-- end of product body -->     
+                                
+                                <div class="booking-details">
+                                    <h5>Your Booking Details</h5>
+                                    <ul class="booking-dates">
+                                        <li>
+                                            <b>Check-in:</b>
+                                            <p>Tuesday, March 19, 2019 from 2:00 PM</p>
+                                        </li>
+                                        <li>
+                                            <b>Check-out:</b>
+                                            <p>Wednesday, March 21, 2019 until 11:00 AM</p>
+                                        </li>
+                                        <li>
+                                            <b>Total length of stay:</b>
+                                            <p>2 nights</p>
+                                        </li>
+                                        <li><a href="#">Traveling on different dates?</a></li>
+                                    </ul>
+                                    <ul class="booking-options">
+                                        <li>
+                                            <b>You selected:</b>
+                                            <p>Standard Double Room</p>
+                                            <p><a href="#">Change your selection</a></p>
+                                        </li>
+                                        <li>
+                                            <b>You selected:</b>
+                                            <p>Breakfast</p>
+                                            <p>Free WiFi</p>
+                                        </li>
+                                    </ul>
+                                </div><!-- end of booking details -->
+                                
+                                <div class="nav-buttons">
+                                    <button class="btn-back">Back</button>
+                                    <button class="btn-next">Next</button>
+                                </div><!-- end of nav buttons -->
+
+                            </div><!-- end of step-1 -->
+
+
+                            <div id="step-2" class="tab-pane animated-fadeIn" role="tabpanel" aria-labelledby="step-2-tab">
+                                <h3 class="text-center">
+                                    Provide all the necessary information that your<br>
+                                    Lodging host might need to know
+                                </h3>
+
+                                <form action="" method="post" name="booking-form">
+                                    <label for "name">My name</label><br>
+                                    <input type="text" id="name" name="name" placeholder="My name" required><br>
+                                    <label for "arrival">Time of arrival</label><br>
+                                    <input type="text" id="arrival" name="arrival" placeholder="Time of arrival" required><br>
+                                    <input type="text" id="guests" name="guests" placeholder="Additional guest names" required><br>
+                                    <input type="tel" id="tel" name="tel" placeholder="My contact number" required><br>
+                                    <input type="email" id="email" name="email" placeholder="My contact email" required><br>
+                                    <label for "guest-message">Guest's message to host</label><br>
+                                    <div class="write-message">
+                                        <textarea id="message" class="guest-message" name="message">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</textarea>
+                                    </div>
+                                </form>
+
+                                <div class="nav-buttons">
+                                    <button class="btn-back">Back</button>
+                                    <button class="btn-next">Next</button>
+                                </div><!-- end of nav buttons -->
+                            </div><!-- end of step-2 -->
+
+
+                            <div id="step-3" class="tab-pane animated-fadeIn" role="tabpanel" aria-labelledby="step-3-tab">
+                                <h3 class="text-center">
+                                    Is your payment method correct?
+                                </h3>
+
+                                <div class="payment-method">
+                                    <img src="amazon_pay_logo_pack/Amazon%20Pay/logo_amazonpay-secondary-fullcolor-positive.png" width="100">
+                                    <p><b>Prntpage Rewards Visa Signature Card</b><br>
+                                    Ending in 4982</p>
+                                    <p><b>Alexander Portelli</b></p>
+                                </div>
+
+                                <p>To change your payment method, please update your settings below.</p>
+
+                                <div class="payment-option">
+                                    <a data-toggle="collapse" href="#bank-cards" role="button" aria-expanded="false" aria-controls="bank-cards" class="collapsed">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+                                            <use xlink:href="#dropdown" class="payment-dropdown" />
+                                        </svg>
+                                        <img src="images/icons/cc-logos.jpg">
+                                        <b>Bank cards</b>
+                                    </a>
+                                    <div class="collapse" id="bank-cards">
+                                        <div class="card card-body">
+                                            <form> <!--switch this form out for Stripe payment form -->
+                                                <label>Cardholder's name</label><br>
+                                                <input type="text" id="cardholders-name" name="cardholders-name" placeholder="Cardholder's name" required />
+                                                <label>Bank card number</label><br>
+                                                <input type="password" id="ccnumber" name="ccnumber" placeholder="" required /><br>
+                                                <label>Expiration date</label><br>
+                                                <select class="form-control custom-select" name="emonth">
+                                                    <option selected>Month</option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                    <option value="05">05</option>
+                                                    <option value="06">06</option>
+                                                    <option value="07">07</option>
+                                                    <option value="08">08</option>
+                                                    <option value="09">09</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                                <select class="form-control custom-select" name="eyear">
+                                                    <option selected>Year</option>
+                                                    <option value="19">2019</option>
+                                                    <option value="20">2020</option>
+                                                    <option value="21">2021</option>
+                                                    <option value="22">2022</option>
+                                                    <option value="23">2023</option>
+                                                    <option value="24">2024</option>
+                                                    <option value="25">2025</option>
+                                                    <option value="26">2026</option>
+                                                    <option value="27">2027</option>
+                                                    <option value="28">2028</option>
+                                                    <option value="29">2029</option>
+                                                    <option value="30">2030</option>
+                                                    </select>
+                                                </select>
+                                                <label>Security number</label><br>
+                                                <input type="password" id="cvv" name="cvv" required> 
+                                                <div class="cvv-info"><b>&#9432;</b>
+                                                    <span class="cvv-text">
+                                                        <b>Security number</b><br>
+                                                        Your 3 digit security number is localised at the back of your card.
+                                                    </span>
+                                                </div>
+                                                <br>
+                                                <button id="bUpdate" class="update">Update</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="payment-option">
+                                    <a data-toggle="collapse" href="#paypal-card" role="button" aria-expanded="false" aria-controls="paypal-card" class="collapsed">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+                                            <use xlink:href="#dropdown" class="payment-dropdown" />
+                                        </svg>
+                                        <img src="images/icons/pp-logo.jpg">
+                                        <b>Paypal</b>
+                                    </a>
+                                    <div class="collapse" id="paypal-card">
+                                        <div class="card card-body">
+                                            paypal info goes here.
+                                            <!-- put paypal form here -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="payment-option">
+                                    <a data-toggle="collapse" href="#express-card" role="button" aria-expanded="false" aria-controls="express-card" class="collapsed">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+                                            <use xlink:href="#dropdown" class="payment-dropdown" />
+                                        </svg>
+                                        <img src="images/icons/ae-logo.jpg">
+                                        <b>American Express</b>
+                                    </a>
+                                    <div class="collapse" id="express-card">
+                                        <div class="card card-body">
+                                            American Express info goes here.
+                                            <!-- put additional payment options here -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nav-buttons">
+                                    <button class="btn-back">Back</button>
+                                    <button class="btn-next">Next</button>
+                                </div><!-- end of nav buttons -->
+                            </div><!-- end of step-3 -->
+
+                            <div id="step-4" class="tab-pane animated-fadeIn" role="tabpanel" aria-labelledby="step-4-tab">
+                                <h3 class="text-center">
+                                    Confirm payment to complete the transaction
+                                </h3>
+
+                                <div class="card card-body">
+                                    <ul class="booking-details">
+                                        <li>
+                                            <b>Check-in:</b>
+                                            <p>Tuesday, March 19, 2019 from 2:00 PM</p>
+                                        </li>
+                                        <li>
+                                            <b>Check-out:</b>
+                                            <p>Wednesday, March 21, 2019 until 11:00 AM</p>
+                                        </li>
+                                        <li>
+                                            <b>You selected:</b>
+                                            <p>Single Family Home</p>
+                                        </li>
+                                        <li>
+                                            <b>Total length of stay:</b>
+                                            <p>2 nights</p>
+                                        </li>
+                                    </ul>
+                                </div><!-- end of card for booking details -->
+
+                                <div class="payment-method">
+                                    <img src="amazon_pay_logo_pack/Amazon%20Pay/logo_amazonpay-secondary-fullcolor-positive.png" width="100">
+                                    <p><b>Prntpage Rewards Visa Signature Card</b><br>
+                                    Ending in 4982</p>
+                                    <p><b>Alexander Portelli</b></p>
+                                </div> <!-- end of payment method -->
+
+                                <div class="card card-body">
+                                    <ul class="purchase-details">
+                                        <li>
+                                            <b>Confirmation Code:</b> 154654
+                                            <p>Tue, September 30, 20118</p>
+                                        </li>
+                                        <li>
+                                            <b>Receipt</b> #000000000
+                                            <p><b>Guest:</b> Alexander Portelli</p>
+                                        </li>
+                                        <li>
+                                            <b>Travel Destination:</b>
+                                            <p>East Denver East Colfax</p>
+                                        </li>
+                                        <li>
+                                            <b>Accommodation Address:</b>
+                                            <p>942 E Mississippi Ave, Denver, CO, 80210</p>
+                                        </li>
+                                        <li>
+                                            <b>Travel Property</b>
+                                            <p>Single Family Home</p>
+                                        </li>
+                                        <li>
+                                            <b>Accommodation Type:</b>
+                                            <p>Entire home/art</p>
+                                        </li>
+                                    </ul>
+                                </div> <!-- end of card for purchase details -->
+
+                                <div class="card card-body">
+                                    <h5>Payment Details</h5>
+                                    <br>
+                                    <p>
+                                        <b>Payment received:</b>
+                                        Tue, September 30, 2019
+                                    </p>
+                                    <hr>
+                                    <ul class="charge-details">
+                                        <li>$000 x 2 nights</li>
+                                        <li>$000</li>
+                                        <li>Cleaning fees</li>
+                                        <li>$00</li>
+                                    </ul>
+                                    <hr>
+                                    <div class="total-charges">
+                                        Total $000
+                                    </div>
+                                    <hr>
+
+                                    <ul class="total-charged">
+                                        <li>Payment (Prntpage Rewards Visa Signature Card xxxxxxxxxxxxxx)</li>
+                                        <li>$000</li>
+                                    </ul>
+
+                                </div> <!-- end of card for payment details-->
+
+                                <div class="nav-buttons">
+                                    <button class="btn-back">Back</button>
+                                    <button class="btn-payout" type="submit" onclick="submitForms()">Place order</button> <!-- write js to handle form submission -->
+                                </div><!-- end of nav buttons -->
+                            </div><!-- end of step-4 -->
+
+                        </div><!-- end of myTabContentSteps -->
+                    </div><!-- end of page-content-view -->
+                </div><!-- end d-flex -->
+            </div><!-- end container -->
+        </section>
+
+        <footer class="animated-fadeIn">
+            <div class="container text-center">
+                2019 © Prntpage. All rights reserved
+            </div>
+        </footer>
+
+        <script src="scripts/vendor/modernizr.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script src="scripts/vendor.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/additional_functions.js"></script>
+    </body>
+</html>
