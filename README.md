@@ -1,3 +1,3 @@
 # prntpageDev
 prntpage.com
-For Developement purposes only!
+Since Alexander M Portelli wants to steal my code,this is now open source and free to everyone!
